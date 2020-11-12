@@ -1,0 +1,15 @@
+﻿@model IEnumerable<TMDTLAB5.Models.News>
+@{
+    ViewBag.Title = "News";
+}
+
+<h2>News</h2>
+
+@foreach (var item in Model)
+{
+    <ul>
+        <li>
+            <p>@item.Description</p>
+        </li>
+    </ul>
+}

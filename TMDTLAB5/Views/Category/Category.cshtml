@@ -1,0 +1,15 @@
+﻿@model IEnumerable<TMDTLAB5.Models.News>
+@{
+    ViewBag.Title = "Category";
+}
+
+<h2>Category</h2>
+
+@foreach (var item in Model)
+{
+    <ul>
+        <li>
+            <a href="@item.Category.Alias/@item.Alias">@item.Header</a>
+        </li>
+    </ul>
+}
